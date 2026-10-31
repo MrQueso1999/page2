@@ -1,0 +1,314 @@
+/* Variables de Color e Identidad Visual */
+:root {
+    --bg-color: #0b0c10;
+    --card-bg: #161d26;
+    --nav-bg: rgba(11, 12, 16, 0.95);
+    --text-gold: #c5a059;
+    --accent-red: #ff4757;
+    --accent-hover: #ff6b81;
+    --border-color: rgba(69, 243, 255, 0.15);
+}
+
+/* Configuración General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Barra de Navegación */
+.navbar {
+    background-color: var(--nav-bg);
+    border-bottom: 1px solid var(--border-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.nav-logo {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #cbd5e0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--accent-red);
+}
+
+/* Layout y Contenedor Principal */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 20px 40px 20px; 
+    display: flex;
+    flex-direction: column;
+    gap: 25px; 
+}
+
+/* Títulos y Encabezados */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: linear-gradient(45deg, #ff4757, #ff6b81);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    color: var(--text-gold);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* --- ESTILOS COMPONENTES DEL FORO --- */
+.forum-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.btn-forum {
+    background-color: var(--accent-red);
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.btn-forum:hover {
+    background-color: var(--accent-hover);
+}
+
+.forum-category {
+    background: rgba(31, 40, 51, 0.4);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.category-title {
+    background-color: #1f2833;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--text-gold);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.forum-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: var(--card-bg);
+    transition: background-color 0.2s;
+}
+
+.forum-row:last-child {
+    border-bottom: none;
+}
+
+.forum-row:hover {
+    background-color: #1c2430;
+}
+
+.forum-info {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.forum-name {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+    transition: color 0.2s;
+}
+
+.forum-name:hover {
+    color: var(--accent-red);
+}
+
+.forum-description {
+    color: #cbd5e0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.forum-stats {
+    display: flex;
+    gap: 30px;
+    font-size: 0.9rem;
+    color: #a0aec0;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.forum-stats strong {
+    color: #ffffff;
+}
+
+/* --- ESTILOS DE LA PÁGINA DE INICIO (Mantener compatibilidad) --- */
+.grid-two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    width: 100%;
+}
+
+.card-box {
+    background-color: var(--card-bg);
+    border: 1px solid #2d3748;
+    border-radius: 12px;
+    padding: 30px;
+    border-left: 4px solid var(--accent-red);
+    width: 100%;
+}
+
+.card-box h3 { margin-bottom: 15px; font-size: 1.4rem; color: #ffffff; }
+.card-box p { color: #cbd5e0; line-height: 1.6; font-size: 0.95rem; }
+
+.full-width-card {
+    background: rgba(31, 40, 51, 0.4);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+.about-company h2 { font-size: 1.8rem; margin-bottom: 15px; color: #ffffff; }
+.about-company p { color: #cbd5e0; line-height: 1.8; font-size: 1.05rem; }
+.about-company strong { color: var(--accent-red); }
+
+/* Pie de Página */
+.footer-links {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.85rem;
+}
+
+.footer-links a {
+    color: #a0aec0;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--accent-red); }
+
+/* ========================================================
+   RESPONSIVE DESIGN (Media Queries)
+   ======================================================== */
+
+/* --- RESOLUCIÓN PARA TABLETAS (Entre 481px y 1024px) --- */
+@media (max-width: 1024px) {
+    .grid-two-columns {
+        grid-template-columns: 1fr; 
+    }
+    
+    h1 {
+        font-size: 2.6rem;
+    }
+}
+
+/* --- RESOLUCIÓN PARA CELULARES (480px o menos) --- */
+@media (max-width: 480px) {
+    .grid-two-columns,
+    .card-box,
+    .full-width-card,
+    .forum-category {
+        width: 100%;
+    }
+    
+    .forum-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .btn-forum {
+        width: 100%;
+        text-align: center;
+    }
+
+    .forum-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .forum-stats {
+        text-align: left;
+        width: 100%;
+        justify-content: flex-start;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        padding-top: 10px;
+    }
+    
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-menu {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-content {
+        padding-top: 150px; 
+    }
+
+    h1 {
+        font-size: 2.1rem;
+    }
+}

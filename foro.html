@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foros — Corporación Culo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Corp. Culo</a>
+            <ul class="nav-menu">
+                <li><a href="index.html#general" class="nav-link">General</a></li>
+                <li><a href="index.html#noticias" class="nav-link">Noticias</a></li>
+                <li><a href="Foro.html" class="nav-link active">Foros</a></li>
+                <li><a href="index.html#conocenos" class="nav-link">Conócenos</a></li>
+                <li><a href="index.html#ayuda" class="nav-link">Ayuda</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal del Foro -->
+    <main class="main-content">
+        <div class="forum-header">
+            <div>
+                <h1>Foros de la Comunidad</h1>
+                <p class="subtitle">Discusión, Soporte y Desarrollo</p>
+            </div>
+            <!-- Botón de acción rápida para el foro -->
+            <a href="#" class="btn-forum" onclick="alert('Funcionalidad para usuarios registrados.'); return false;">+ Crear Nuevo Tema</a>
+        </div>
+
+        <!-- CATEGORÍA 1: GENERAL -->
+        <section class="forum-category">
+            <div class="category-title">Discusiones Generales</div>
+            
+            <!-- Foro ítem 1 -->
+            <div class="forum-row">
+                <div class="forum-info">
+                    <a href="#" class="forum-name">Bienvenida y Anuncios</a>
+                    <p class="forum-description">Normas de la comunidad, noticias importantes sobre Corporación Culo y actualizaciones del sitio.</p>
+                </div>
+                <div class="forum-stats">
+                    <span><strong>0</strong> Temas</span>
+                    <span><strong>0</strong> Mensajes</span>
+                </div>
+            </div>
+
+            <!-- Foro ítem 2 -->
+            <div class="forum-row">
+                <div class="forum-info">
+                    <!-- ENLACE CONECTADO AL CHAT EN VIVO -->
+                    <a href="charla-general.html" class="forum-name">Charla General</a>
+                    <p class="forum-description">Espacio libre para hablar de cualquier tema con otros miembros de la comunidad.</p>
+                </div>
+                <div class="forum-stats">
+                    <span><strong>0</strong> Temas</span>
+                    <span><strong>0</strong> Mensajes</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATEGORÍA 2: SOPORTE Y DESARROLLO -->
+        <section class="forum-category">
+            <div class="category-title">Desarrollo y Ayuda</div>
+            
+            <!-- Foro ítem 3 -->
+            <div class="forum-row">
+                <div class="forum-info">
+                    <a href="#" class="forum-name">Soporte Técnico</a>
+                    <p class="forum-description">¿Tienes problemas con alguna herramienta o script? Pregunta aquí y recibe ayuda de la comunidad.</p>
+                </div>
+                <div class="forum-stats">
+                    <span><strong>0</strong> Temas</span>
+                    <span><strong>0</strong> Mensajes</span>
+                </div>
+            </div>
+
+            <!-- Foro ítem 4 -->
+            <div class="forum-row">
+                <div class="forum-info">
+                    <a href="#" class="forum-name">Aportes y Guías</a>
+                    <p class="forum-description">Comparte tus propias configuraciones, tutoriales y mejoras de software con el resto.</p>
+                </div>
+                <div class="forum-stats">
+                    <span><strong>0</strong> Temas</span>
+                    <span><strong>0</strong> Mensajes</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enlaces del Pie -->
+        <footer class="footer-links">
+            <a href="#">Términos de Servicio</a> · 
+            <a href="#">Política de Privacidad</a>
+        </footer>
+    </main>
+
+</body>
+</html>
